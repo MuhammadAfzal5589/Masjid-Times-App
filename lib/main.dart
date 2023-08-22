@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
         colorScheme: const ColorScheme(
           brightness: Brightness.light,
             primary: Color(0xFF007635),
-            onPrimary: Colors.blue,
+            onPrimary: Colors.red,
             secondary: Colors.blue,
-            onSecondary: Color(0xFF007635),
+            onSecondary: Colors.yellow,
             error: Colors.red,
             onError: Colors.white,
             background: Colors.white,

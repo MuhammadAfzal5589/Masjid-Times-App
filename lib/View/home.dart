@@ -9,9 +9,11 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: MediaQuery.of(context).size.height*0.2,
-        // backgroundColor: Color(0xff007635),
         foregroundColor: Colors.white,
-        title: const Center(child: FaIcon(FontAwesomeIcons.mosque,size: 70,),
+        title: const Center(
+          child: Image(image: AssetImage("assets/images/Crescent.png"),height: 100.0,width: 100.0,
+        ),
+        // title: const Center(child: FaIcon(FontAwesomeIcons.mosque,size: 70,),
         ),
         // leading: FaIcon(FontAwesomeIcons.list),
       ),
