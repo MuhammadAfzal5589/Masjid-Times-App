@@ -17,7 +17,7 @@ class MenuItem extends StatelessWidget {
               borderRadius: BorderRadius.circular(10.0)
         ),
         child: Center(
-          child: Text(text,style: TextStyle(fontSize: 18.0),),
+          child: Text(text,style: Theme.of(context).textTheme.bodyText1,),
         ),
       ),
     );
