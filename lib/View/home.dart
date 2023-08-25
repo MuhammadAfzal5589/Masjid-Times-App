@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 // import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:masjid/Model/MenuItem.dart';
+import 'package:masjid/Model/mywidgets.dart';
 class Home extends StatelessWidget {
   const Home({super.key});
 
@@ -17,31 +19,43 @@ class Home extends StatelessWidget {
         ),
         // leading: FaIcon(FontAwesomeIcons.list),
       ),
-    body:  const SingleChildScrollView(
+    body:    SingleChildScrollView(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(height: 10.0),
-          Text("Options"),
-          Row(
+          const SizedBox(height: 20.0),
+          Container(
+            height: 40.0,
+            color: Colors.grey.shade200,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Bodytext(text: "Home"),
+                Bodytext(text: "Current"),
+                Bodytext(text: "Joined"),
+                Bodytext(text: "Home"),
+              ],
+            ),
+          ),
+            const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              MenuItem(text: "Times",),
-              MenuItem(text: "Direction",),
+              MenuItem(text: "Times", icon: Icons.timelapse),
+              MenuItem(text: "Direction", icon: Icons.location_on_outlined,),
             ],
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              MenuItem(text: "About",),
-              MenuItem(text: "Donation",),
+              MenuItem(text: "About", icon: Icons.info_outline_rounded,),
+              MenuItem(text: "Donation", icon: FontAwesomeIcons.timeline,),
             ],
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              MenuItem(text: "Theme",),
-              MenuItem(text: "Settings",),
+              MenuItem(text: "Theme", icon: Icons.color_lens_outlined,),
+              MenuItem(text: "Settings", icon: Icons.settings_outlined,),
             ],
           ),
         ],
