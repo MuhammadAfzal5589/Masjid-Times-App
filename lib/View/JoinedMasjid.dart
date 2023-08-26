@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:masjid/Model/MenuItem.dart';
 import 'package:masjid/Model/appbar.dart';
 import 'package:masjid/Model/mywidgets.dart';
 
@@ -35,7 +36,14 @@ class JoinedMasjid extends StatelessWidget {
                 ],
               ),
             ),
-            // MenuItemDetailed()
+            MenuItemDetailed(),
+            MenuItemDetailed(),
+            MenuItemDetailed(),
+            MenuItemDetailed(),
+            MenuItemDetailed(),
+            MenuItemDetailed(),
+            MenuItemDetailed(),
+            MenuItemDetailed(),
           ],
         ),
       ),

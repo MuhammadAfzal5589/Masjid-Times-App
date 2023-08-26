@@ -39,14 +39,14 @@ class Home extends StatelessWidget {
             const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              MenuItem(text: "Times", icon: Icons.timelapse),
-              MenuItem(text: "Direction", icon: Icons.location_on_outlined,),
+              MenuItem(text: "Search", icon: Icons.mosque),
+              MenuItem(text: "Location", icon: Icons.location_on_outlined,),
             ],
           ),
           const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              MenuItem(text: "About", icon: Icons.info_outline_rounded,),
+              MenuItem(text: "About us", icon: Icons.info_outline_rounded,),
               MenuItem(text: "Donation", icon: FontAwesomeIcons.timeline,),
             ],
           ),

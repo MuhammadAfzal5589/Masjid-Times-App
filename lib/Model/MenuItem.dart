@@ -39,41 +39,42 @@ class MenuItem extends StatelessWidget {
 }
 
 class MenuItemDetailed extends StatelessWidget {
-    MenuItemDetailed({super.key});
-
-  final List<String> items = List.generate(100, (index) => 'Item ${index + 1}');
+  const MenuItemDetailed({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-        itemCount: items.length,
-        itemBuilder: (BuildContext context, int index) {
-      return ListTile(
-        // title: Text(items[index])
-        title: Container(
-          height: 120,
-          width: 120,
-          decoration: BoxDecoration(
-            color: Theme.of(context).primaryColor,
-            borderRadius: BorderRadius.circular(10.0),
-          ),
-          child: Center(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const FaIcon(FontAwesomeIcons.mosque),
-                Column(
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+        height: 100,
+        width: MediaQuery.of(context).size.width,
+        decoration: BoxDecoration(
+          color: Theme.of(context).primaryColor,
+          borderRadius: BorderRadius.circular(10.0),
+        ),
+        child: Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Flexible(
+                  flex: 1,
+                  child: const FaIcon(FontAwesomeIcons.mosque,size: 50.0,color: Colors.white,)),
+              Flexible(
+                flex: 3,
+                fit: FlexFit.tight,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Name",style: Theme.of(context).textTheme.bodyMedium,),
-                    Text("Detail",style: Theme.of(context).textTheme.bodyMedium,),
+                    Text("Name",style: Theme.of(context).textTheme.titleLarge,),
+                    Text("Detail about the Masjid",style: Theme.of(context).textTheme.bodyMedium,),
                   ],
-                )
-              ],
-            ),
+                ),
+              )
+            ],
           ),
         ),
-      );
-        }
-    ) ;
-}
+      ),
+    );
+  }
 }

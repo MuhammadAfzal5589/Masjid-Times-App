@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         textTheme:  TextTheme(
           bodyMedium: TextStyle(color: Colors.white),
-          titleMedium: TextStyle(color: Color(0xFF007635))
+          titleMedium: TextStyle(color: Color(0xFF007635)),
+          titleLarge: TextStyle(color: Colors.white),
         ),
         brightness: Brightness.light,
         useMaterial3: true,
