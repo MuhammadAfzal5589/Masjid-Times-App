@@ -60,7 +60,7 @@ class MenuItemDetailed extends StatelessWidget {
                   flex: 1,
                   child: const FaIcon(FontAwesomeIcons.mosque,size: 50.0,color: Colors.white,)),
               Flexible(
-                flex: 3,
+                flex: 2,
                 fit: FlexFit.tight,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -70,6 +70,14 @@ class MenuItemDetailed extends StatelessWidget {
                     Text("Detail about the Masjid",style: Theme.of(context).textTheme.bodyMedium,),
                   ],
                 ),
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Flexible(
+                      flex: 1,
+                      child: Icon(Icons.more_vert,color: Colors.white,)),
+                ],
               )
             ],
           ),
