@@ -10,12 +10,12 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         toolbarHeight: MediaQuery.of(context).size.height*0.2,
         backgroundColor: Theme.of(context).primaryColor,
         title:  const Center(
           child: Image(image: AssetImage("assets/images/Crescent.png"),height: 100.0,width: 100.0,
         ),
-        // title: const Center(child: FaIcon(FontAwesomeIcons.mosque,size: 70,),
         ),
         // leading: FaIcon(FontAwesomeIcons.list),
       ),
@@ -27,13 +27,12 @@ class Home extends StatelessWidget {
           Container(
             height: 40.0,
             color: Colors.grey.shade200,
-            child: Row(
+            child:   const Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Bodytext(text: "Home"),
                 Bodytext(text: "Current"),
                 Bodytext(text: "Joined"),
-                Bodytext(text: "Home"),
               ],
             ),
           ),
