@@ -15,7 +15,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: const Color(0xFF008635),
         primarySwatch: Colors.green,
-        textTheme:  TextTheme(
+        disabledColor:Colors.grey,
+        dividerColor:Colors.blue,
+        focusColor:Colors.yellow,
+        highlightColor:Colors.yellow,
+        hintColor:Colors.greenAccent,
+        indicatorColor:Colors.white,
+        textTheme:  const TextTheme(
           bodyMedium: TextStyle(color: Colors.white),
           titleMedium: TextStyle(color: Color(0xFF007635)),
           titleLarge: TextStyle(color: Colors.white),

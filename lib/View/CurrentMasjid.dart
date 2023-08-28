@@ -16,7 +16,7 @@ class CurrentMasjid extends StatelessWidget {
         flexibleSpace: Container(
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
-            child: const CustomAppbar()),
+            child:   CustomAppbar1()),
         // title:
         leading: const Icon(Icons.menu)
         

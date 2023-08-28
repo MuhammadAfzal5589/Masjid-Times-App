@@ -56,9 +56,9 @@ class MenuItemDetailed extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Flexible(
+              const Flexible(
                   flex: 1,
-                  child: const FaIcon(FontAwesomeIcons.mosque,size: 50.0,color: Colors.white,)),
+                  child: FaIcon(FontAwesomeIcons.mosque,size: 50.0,color: Colors.white,)),
               Flexible(
                 flex: 2,
                 fit: FlexFit.tight,
@@ -71,7 +71,7 @@ class MenuItemDetailed extends StatelessWidget {
                   ],
                 ),
               ),
-              Column(
+              const Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Flexible(
