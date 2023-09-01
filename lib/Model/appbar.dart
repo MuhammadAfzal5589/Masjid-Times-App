@@ -43,7 +43,7 @@ class CustomAppbar3 extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       decoration: const BoxDecoration(
           image: DecorationImage(
-              image:  AssetImage("assets/images/Masjidimage2.jpg")  ,
+              image:  AssetImage("assets/images/masjidimage2.jpg")  ,
               fit: BoxFit.fill)
       ),
     );

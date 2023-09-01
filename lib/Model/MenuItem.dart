@@ -20,14 +20,14 @@ class MenuItem extends StatelessWidget {
           height: 120,
           width: 120,
           decoration: BoxDecoration(
-            color: Theme.of(context).primaryColor,
+            color: Theme.of(context).cardColor,
                 borderRadius: BorderRadius.circular(10.0),
           ),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                icon!=null ? Icon(icon,size: 50.0,color: Colors.white,) : const FaIcon(FontAwesomeIcons.image),
+                icon!=null ? Icon(icon,size: 50.0,color: Theme.of(context).scaffoldBackgroundColor,) : const FaIcon(FontAwesomeIcons.image),
                 Text(text,style: Theme.of(context).textTheme.bodyMedium,),
               ],
             ),
@@ -49,7 +49,7 @@ class MenuItemDetailed extends StatelessWidget {
         height: 100,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).cardColor,
           borderRadius: BorderRadius.circular(10.0),
         ),
         child: Center(
